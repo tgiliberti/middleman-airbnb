@@ -1,0 +1,27 @@
+allan:
+  name: "Allan's home"
+  description: "Charming room in Ilheus"
+  city_name: "Ilheus, Bahia, Brazil"
+  city_slug: "ilheus"
+  picture: "images/berlin.jpeg"
+  user_picture: "allan.jpeg"
+  wifi: true
+  rating: 4
+andre:
+  name: "Miotto's home"
+  description: Small flat in Maceió
+  city_name: "Maceio, Alagoas, Brazil"
+  city_slug: "maceio"
+  picture: "images/rio.jpeg"
+  user_picture: "andre.jpeg"
+  wifi: false
+  rating: 3
+robynson:
+  name: Robynson's home
+  description: Nice flat in Minas Gerais
+  city_name: "Caxambu, Minas Gerais, Brazil"
+  city_slug: "caxambu"
+  picture: "images/shanghai.jpeg"
+  user_picture: "robynson.jpeg"
+  wifi: true
+  rating: 5
