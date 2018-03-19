@@ -14,10 +14,10 @@ title: Le Wagon - Middleman
   </div>
 </div> -->
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'berlin.jpeg'%>);">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'rio.jpeg'%>);">
   <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
+    <h1>Le Wagon Rio de Janeiro</h1>
+    <p>Learn to code with us in Rio</p>
     <a class="btn btn-primary btn-lg">Start now</a>
   </div>
 </div>
@@ -25,20 +25,21 @@ title: Le Wagon - Middleman
 
 <div class="container">
   <div class="row">
+    <% data.cities.each do |city| %>
     <div class="col-xs-12 col-sm-4">
-      <!-- insert <div class="card"> -->
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path 'shanghai.jpeg'%>);">
+
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= city.picture %>');">
           <div class="card-category">Popular</div>
           <div class="card-description">
-            <h2>Le Wagon Shanghai</h2>
-            <p>Very cool city, the best</p>
+            <h2>Le Wagon <%= city.name %></h2>
+            <p><%= city.description %></p>
           </div>
-          <%= image_tag "allan.jpeg", class: "card-user" %>
+          <%= image_tag city.user_picture, class: "card-user" %>
           <a class="card-link" href="#" ></a>
         </div>
 
-
       </div>
+      <% end %>
 
         </div>
       </div>
