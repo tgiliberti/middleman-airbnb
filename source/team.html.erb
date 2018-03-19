@@ -1,0 +1,8 @@
+ <ul class="list-inline text-center">
+  <% ["allan", "robynson", "andre"].each do |gh_username| %>
+    <li>
+      <%= image_tag "#{gh_username}.jpeg", class: "team-avatar" %>
+      <h3><%= gh_username.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
